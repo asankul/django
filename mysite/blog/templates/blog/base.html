@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta property="og:image" content="path/to/image.jpg">
+        <title>Главная</title>
+        <!--Main-Style-->
+
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/libs.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animation.css' %}">
+        <!--Fonts-->
+        <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+        <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <!--start buttons Fixed-->
+        <div id="fixedBTN" class="block-btn-fixed">
+            <a href="#top" class="btn-up anchor"><i class="lnr lnr-arrow-up"></i></a>
+        </div>
+        <!--end buttons Fixed-->
+        <!--start modal (class button - "popup-with-move-anim") -->
+        <div id="small_modal" class="modal_form zoom-anim-dialog mfp-hide">
+            <div class="block_form">
+                <form action="">
+                    <div class="box_caption_form">
+                        <p class="title">Заказать обратный звонок</p>
+                    </div>
+                    <div class="group">
+                        <input type="text" name="textfield" placeholder="Имя">
+                    </div>
+                    <div class="group">
+                        <input type="tel" name="textfield" placeholder="Телефон">
+                    </div>
+                    <div class="btn_group"><button type="submit" class="btn_main">Отправить</button></div>
+                    <div class="text-center">
+                        <span class="sub_form">Мы свяжемся с Вами в течение 10 минут</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--end modal-->
+
+        <!--Wrapper-->
+        <div id="top" class="wrapper">
+			<!--start box_navbar_mobi-->
+			<div class="box_navbar_mobi">
+				<ul class="list_networks">
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+				</ul>
+				<ul class="list_menu">
+					<li><a href="#top" class="anchor">Главная</a></li>
+					<li><a href="#services" class="anchor">Услуги</a></li>
+					<li><a href="#portfolio" class="anchor">Портфолио</a></li>
+					<li><a href="#about" class="anchor">О нас</a></li>
+					<li><a href="#steps" class="anchor">Этапы работы</a></li>
+					<li><a href="#contacts" class="anchor">Контакты</a></li>
+				</ul>
+			</div>
+			<!--end box_navbar_mobi-->
+            <!--start Header-->
+            <header id="header" class="header">
+                <div class="container-fluid">
+					<div class="row">
+						<div class="col-md-5 block_navbar flex_left">
+							<a href="#small_modal" class="btn_order popup-with-move-anim">Связаться с нами</a>
+							<ul class="list_navbar">
+								<li><a href="#top" class="anchor">Главная</a></li>
+								<li><a href="#services" class="anchor">Услуги</a></li>
+								<li><a href="#portfolio" class="anchor">Портфолио</a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-sm-6 col-md-2 block_logo"><a href="#" class="logo"><img src="img/logo.svg" alt=""></a></div>
+						<div class="col-md-5 block_navbar flex_right">
+							<ul class="list_navbar">
+								<li><a href="#about" class="anchor">О нас</a></li>
+								<li><a href="#steps" class="anchor">Этапы работы</a></li>
+								<li><a href="#contacts" class="anchor">Контакты</a></li>
+							</ul>
+							<ul class="list_networks">
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-sm-6 box_btn_navbar">
+							<button class="btn_navbar">
+								<span class="line1"></span>
+								<span class="line2"></span>
+								<span class="line3"></span>
+							</button>
+						</div>
+					</div>
+                </div>
+            </header>
+            <!--end Header-->
+            <!--start section.intro-->
+            <section class="intro_slider">
+				<div class="slider">
+					<div class="item" style="background: url({% static 'img/slider/slide4.jpg' %}) center no-repeat; background-size: cover;">
+						<div class="container">
+							<div class="height_full">
+								<div class="box__intro">
+									<h1 class="intro_caption wow zoomIn">Профессиональная организация и координация мероприятий любого формата.</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item" style="background: url({% static 'img/slider/slide3.jpg' %}) center no-repeat; background-size: cover;">
+						<div class="container">
+							<div class="height_full">
+								<div class="box__intro">
+									<h1 class="intro_caption wow zoomIn">Профессиональная организация и координация мероприятий любого формата.</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item" style="background: url({% static 'img/slider/slide2.jpg' %}) center no-repeat; background-size: cover;">
+						<div class="container">
+							<div class="height_full">
+								<div class="box__intro">
+									<h1 class="intro_caption wow zoomIn">Профессиональная организация и координация мероприятий любого формата.</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="order_networks">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-4 box_address wow fadeInUp">
+								<address><i class="lnr lnr-map-marker"></i>г. Бишкек, ул. Ахунбаева 133, 3 этаж, Офис № 3.</address>
+							</div>
+							<div class="col-md-4 box_btnDown">
+								<a href="#services" class="btn_down anchor"><i class="lnr lnr-arrow-down"></i></a>
+							</div>
+							<div class="col-md-4 box_phone wow fadeInUp">
+								<a href="#" class="phone"><i class="lnr lnr-phone-handset"></i>+ 996 550 888 706,</a>
+								<a href="#" class="phone">+ 996 776 888 705</a>
+							</div>
+						</div>
+					</div>
+				</section>
+            </section>
+            <!--end section.intro-->
+			<!--start section.services_main-->
+			<section id="services" class="services_main">
+				<div class="container-fluid">
+					<div class="block_caption_main">
+						<h2 class="caption_main wow fadeInDown">Наши услуги<i class="icon"><img src="img/svg/icon_caption.svg" alt=""></i></h2>
+						<span class="sub wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quod, nihil!</span>
+					</div>
+					<div class="row service_boxes">
+						<div class="col-md-6 item_services wow fadeInLeft">
+							<div class="img_wrapper">
+								<img src="img/jpg/service_wed.jpg" alt="">
+								<div class="box_caption">
+									<h2 class="caprion wow fadeInUp">Wedding Agency</h2>
+								</div>
+								<a href="#" class="btn_main">Посмотреть</a>
+							</div>
+							<div class="box_btn"></div>
+						</div>
+						<div class="col-md-6 item_services wow fadeInRight">
+							<div class="img_wrapper">
+								<img src="img/jpg/service_ev.jpg" alt="">
+								<div class="box_caption">
+									<h2 class="caprion wow fadeInUp">Event Agency</h2>
+								</div>
+								<a href="#" class="btn_main">Посмотреть</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end section.services_main-->
+			<!--start section.portfolio-->
+			<section id="portfolio" class="portfolio">
+				<div class="container">
+					<div class="block_caption_main">
+						<h2 class="caption_main wow fadeInDown">Портфолио<i class="icon"><img src="img/svg/icon_caption.svg" alt=""></i></h2>
+						<span class="sub wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quod, nihil!</span>
+					</div>
+					<div class="row">
+                        {% block content %}
+						{% endblock %}
+					</div>
+					<div class="text-center">
+						<a href="#" class="btn_main wow fadeInDown">Больше...</a>
+					</div>
+				</div>
+				<div class="container">
+
+				</div>
+			</section>
+			<!--end section.portfolio-->
+			<!--start section.about-->
+			<section id="about" class="about">
+				<div class="container">
+					<div class="block_caption_main">
+						<h2 class="caption_main wow fadeInDown">О нас<i class="icon"><img src="img/svg/icon_caption.svg" alt=""></i></h2>
+						<span class="sub wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quod, nihil!</span>
+					</div>
+					<div class="row">
+						<div class="col-md-8 description">
+							<div class="box_description wow fadeIn">
+								<p>Мы занимаемся  профессиональной организацией и координацией частных и корпоративных мероприятий с 2014 года. За это время нам удалось успешно реализовать огромное количество проектов! Наши клиенты в 100% случаев остаются довольны нашей работой и мы этим гордимся!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--end section.about-->
+			<!--start section.order_main-->
+			<section class="order_main">
+				<div class="container">
+					<div class="row_flex">
+						<h2 class="caption">Закажите праздник прямо сейчас</h2>
+						<div class="box_btn"><a href="#small_modal" class="btn_order popup-with-move-anim">Заказать свадьбу</a></div>
+					</div>
+				</div>
+			</section>
+			<!--end section.order_main-->
+			<!--start section.reviews-->
+			<section class="reviews">
+				<div class="container">
+					<div class="block_caption_main">
+						<h2 class="caption_main wow fadeInDown">Отзывы клиентов<i class="icon"><img src="img/svg/icon_caption.svg" alt=""></i></h2>
+					</div>
+					<ul id="video" class="list_reviews">
+						<li class="item row">
+							<div class="box_image">
+								<div class="img_wrapper"><img src="img/jpg/img_reviews1.jpg" alt=""></div>
+							</div>
+							<div class="box_description">
+								<span class="name">Андрей и Регина</span>
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid architecto consequuntur cum deserunt doloribus et illo laudantium minima nam nemo neque nihil officia optio quam quas quisquam quod repellendus sed similique, soluta sunt ullam, veniam vitae voluptate! Eius et illo in modi?</p>
+							</div>
+						</li>
+						<li class="item row reverse">
+							<div class="box_image">
+								<div class="img_wrapper"><img src="img/jpg/img_reviews2.jpg" alt="">
+									<a href="https://www.youtube.com/watch?v=Aeh_Ts_8BpU" class="link_video"><i class="icon_video"></i></a>
+								</div>
+							</div>
+							<div class="box_description">
+								<span class="name">День рождения Олега</span>
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid architecto consequuntur cum deserunt doloribus et illo laudantium minima nam nemo neque nihil officia optio quam quas quisquam quod repellendus sed similique, soluta sunt ullam, veniam vitae voluptate! Eius et illo in modi?</p>
+							</div>
+						</li>
+						<li class="item row reverse">
+							<div class="box_image">
+								<div class="img_wrapper"><img src="img/jpg/img_reviews3.jpg" alt=""></div>
+							</div>
+							<div class="box_description">
+								<span class="name">Детский праздик в саду</span>
+								<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid architecto consequuntur cum deserunt doloribus et illo laudantium minima nam nemo neque nihil officia optio quam quas quisquam quod repellendus sed similique, soluta sunt ullam, veniam vitae voluptate! Eius et illo in modi?</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!--end section.reviews-->
+			<!--start section.info_section-->
+			<section class="info_section">
+				<div class="container">
+					<div class="row box_info">
+						<div class="text-center wow fadeIn"><img src="img/logo.svg" alt="" class="logo"></div>
+						<h3 class="title wow fadeInDown">Мы  создаем  мероприятия «под ключ» - это значит, что все вопросы по подготовке, организации и координации события мы берем на себя. От первой встречи с клиентом до отъезда последнего гостя.</h3>
+						<h5 class="title2 wow fadeInUp">Для нас это не просто работа, а наша миссия, философия и предназначение.</h5>
+					</div>
+				</div>
+			</section>
+			<!--end section.info_section-->
+			<!--start section.advantages-->
+			<section class="advantages">
+				<div class="container">
+					<div class="block_caption_main">
+						<h2 class="caption_main wow fadeInDown">Мы больше, чем просто агентство<i class="icon"><img src="img/svg/icon_caption.svg" alt=""></i></h2>
+						<span class="sub wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestiae nisi quaerat quidem repellat saepe voluptatibus!</span>
+					</div>
+					<ul class="list_advantages row">
+						<li class="item col-md-3 col-sm-4 col-xs-12 wow fadeIn">
+							<div class="img_wrapper"><img src="img/jpg/advantages/img_advan1.jpg" alt=""></div>
+							<p class="title">Мы создаем СОБЫТИЯ, наполненные радостью и вдохновением</p>
+						</li>
+						<li class="item col-md-3 col-sm-4 col-xs-12 wow fadeIn">
+							<div class="img_wrapper"><img src="img/jpg/advantages/img_advan2.jpg" alt=""></div>
+							<p class="title">МЕРОПРИЯТИЯ, отличающиеся качественной и профессиональной организацией</p>
+						</li>
+						<li class="item col-md-3 col-sm-4 col-xs-12 wow fadeIn">
+							<div class="img_wrapper"><img src="img/jpg/advantages/img_advan3.jpg" alt=""></div>
+							<p class="title">Режиссерские и концептуальные ИВЕНТЫ для тех, кто мечтает об уникальном событии</p>
+						</li>
+						<li class="item col-md-3 col-sm-4 col-xs-12 wow fadeIn">
+							<div class="img_wrapper"><img src="img/jpg/advantages/img_advan4.jpg" alt=""></div>
+							<p class="title">ПРАЗДНИКИ, запоминающиеся,  как самые необычные и интересные</p>
+						</li>
+						<li class="item col-md-3 col-sm-4 col-xs-12 wow fadeIn">
+							<div class="img_wrapper"><img src="img/jpg/advantages/img_advan5.jpg" alt=""></div>
+							<p class="title">Мы берем на себя Ваши заботы</p>
+						</li>
+						<li class="item col-md-3 col-sm-4 col-xs-12 wow fadeIn">
+							<div class="img_wrapper"><img src="img/jpg/advantages/img_advan6.jpg" alt=""></div>
+							<p class="title">Воплощаем Ваши мечты в реальность</p>
+						</li>
+						<li class="item col-md-3 col-sm-4 col-xs-12 wow fadeIn">
+							<div class="img_wrapper"><img src="img/jpg/advantages/img_advan7.jpg" alt=""></div>
+							<p class="title">Экономим Ваше время, нервы, средства</p>
+						</li>
+						<li class="item col-md-3 col-sm-4 col-xs-12 wow fadeIn">
+							<div class="img_wrapper"><img src="img/jpg/advantages/img_advan8.jpg" alt=""></div>
+							<p class="title">И Делаем подготовку к празднику понятной и приятной</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!--end section.advantages-->
+			<!--start section.order_main-->
+			<section class="order_main order2">
+				<div class="container">
+					<div class="row_flex">
+						<h2 class="caption">Закажите праздник прямо сейчас</h2>
+						<div class="box_btn"><a href="#small_modal" class="btn_order popup-with-move-anim">Заказать праздник</a></div>
+					</div>
+				</div>
+			</section>
+			<!--end section.order_main-->
+			<!--start section.steps-->
+			<section id="steps" class="steps">
+				<div class="container">
+					<div class="block_caption_main">
+						<h2 class="caption_main wow fadeInDown">Этапы работы<i class="icon"><img src="img/svg/icon_caption.svg" alt=""></i></h2>
+						<span class="sub wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quod, nihil!</span>
+					</div>
+					<div class="row box_steps">
+						<ul class="list_steps row">
+							<li class="col-md-4">
+								<i class="icon wow zoomIn"><img src="img/svg/icon_steps1.svg" alt=""></i>
+								<span class="title">Вы делаете звонок или оставляете нам заявку</span>
+								<i class="arrow"><img src="img/svg/send.svg" alt=""></i>
+							</li>
+							<li class="col-md-4 bottom">
+								<i class="icon wow zoomIn"><img src="img/svg/icon_steps2.svg" alt=""></i>
+								<span class="title">Мы выясняем Ваши интересы и пожелания</span>
+								<i class="arrow"><img src="img/svg/send.svg" alt=""></i>
+							</li>
+							<li class="col-md-4">
+								<i class="icon wow zoomIn"><img src="img/svg/icon_steps3.svg" alt=""></i>
+								<span class="title">Встречаемся, обговариваем формат  Вашего мероприятия и подписываем договор</span>
+								<i class="arrow"><img src="img/svg/send.svg" alt=""></i>
+							</li>
+							<li class="col-md-4">
+								<i class="icon wow zoomIn"><img src="img/svg/icon_steps4.svg" alt=""></i>
+								<span class="title">Составляем бюджет, предлагаем концепции </span>
+								<i class="arrow"><img src="img/svg/send.svg" alt=""></i>
+							</li>
+							<li class="col-md-4 bottom">
+								<i class="icon wow zoomIn"><img src="img/svg/icon_steps5.svg" alt=""></i>
+								<span class="title">Прорабатываем множество  нюансов и деталей</span>
+								<i class="arrow"><img src="img/svg/send.svg" alt=""></i>
+							</li>
+							<li class="col-md-4">
+								<i class="icon wow zoomIn"><img src="img/svg/icon_steps6.svg" alt=""></i>
+								<span class="title">Преступаем  к реализации проекта</span>
+								<i class="arrow"><img src="img/svg/send.svg" alt=""></i>
+							</li>
+							<li class="col-md-4">
+								<i class="icon wow zoomIn"><img src="img/svg/icon_steps7.svg" alt=""></i>
+								<span class="title">Осуществляем, координируем и контролируем </span>
+								<i class="arrow"><img src="img/svg/send.svg" alt=""></i>
+							</li>
+							<li class="col-md-4">
+								<i class="icon wow zoomIn"><img src="img/svg/icon_steps8.svg" alt=""></i>
+								<span class="title">Вы довольны - Мы счастливы!</span>
+								<i class="arrow"><img src="img/svg/send.svg" alt=""></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!--end section.steps-->
+
+			<div id="contacts"></div>
+            <!--start Footer-->
+            <footer>
+            	<div class="container">
+					<div class="block_caption_main">
+						<h2 class="caption_main">Как с нами связаться?</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-4 box_contacts">
+							<p class="title">Нам можно позвонить</p>
+							<div class="text-center"><i class="lnr lnr-phone-handset"></i></div>
+							<a href="#" class="phone">+ 996 550 888 706</a>
+							<a href="#" class="phone">+ 996 776 888 705</a>
+						</div>
+						<div class="col-md-4 box_contacts">
+							<p class="title">Можно написать нам</p>
+							<div class="text-center"><i class="lnr lnr-envelope"></i></div>
+							<a href="#" class="mail">Holiday_dream@mail.ru</a>
+						</div>
+						<div class="col-md-4 box_contacts">
+							<p class="title">Или оставить заявку</p>
+							<div class="text-center"><i class="lnr lnr-bubble"></i></div>
+							<div class="box_btn">
+								<a href="#small_modal" class="btn_main popup-with-move-anim">Оставить заявку</a>
+							</div>
+						</div>
+					</div>
+					<div class="text-center box_adres">
+						<p class="title">А лучше, приходите к нам в гости и мы все обсудим!</p>
+						<address>Город Бишкек, ул. Ахунбаева 133,  3 этаж, Офис № 3.</address>
+					</div>
+            	</div>
+            	<div class="down_footer">
+            		<div class="container">
+            			<div class="row">
+            				<div class="col-md-4 text-left">
+								<p class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+            				<div class="col-md-4 text-center">
+								<ul class="list_networks">
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+								</ul>
+            				</div>
+            				<div class="col-md-4 text-right">
+								<span class="dev">Дизайн и разработка</span>
+            					<a href="#" class="link_developer">
+            						<img src="img/logo_dev.svg" alt="">
+            					</a>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            </footer>
+            <!--end Footer-->
+        </div>
+        <!--Wrapper end-->
+        {% load static %}
+        <script type="text/javascript" src="{% static 'js/libs.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/commond.js' %}"></script>
+        <script>
+           new WOW().init();
+		</script>
+
+    </body>
+</html>

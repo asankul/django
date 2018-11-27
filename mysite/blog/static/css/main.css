@@ -1,6 +1,6 @@
 /* ========================== GLOBAL STYLES =====================================  */
 body {
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed"!important;
   background: #fff;
   font-size: 14px; }
 
