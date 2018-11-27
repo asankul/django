@@ -1,0 +1,29 @@
+/* ========================== GLOBAL STYLES =====================================  */
+body {
+  font-family: "Open Sans Condensed";
+  background: #fff;
+  font-size: 14px; }
+
+.wrapper {
+  position: relative;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+input, a, button, select, textarea, .item {
+  outline: none !important;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.row:before, .row:after {
+  content: none; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }

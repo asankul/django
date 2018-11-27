@@ -1,0 +1,46 @@
+/* ================================ MODAL =======================================  */
+.modal_form, .modal_services {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 80px 30px 40px; }
+  .modal_form .box_caption_form, .modal_services .box_caption_form {
+    text-align: center;
+    padding-bottom: 30px; }
+    .modal_form .box_caption_form .title, .modal_services .box_caption_form .title {
+      display: inline-block;
+      font-size: 34px;
+      color: #323232;
+      font-family: "Open Sans Condensed"; }
+  .modal_form .group, .modal_services .group {
+    width: 100%;
+    margin-bottom: 20px; }
+    .modal_form .group input, .modal_services .group input {
+      width: 100%;
+      padding: 14px 15px;
+      border: 1px solid #ebebeb;
+      -webkit-border-radius: 3px;
+              border-radius: 3px; }
+      .modal_form .group input:hover, .modal_services .group input:hover {
+        border: 1px solid #d9d9d9; }
+      .modal_form .group input:focus, .modal_services .group input:focus {
+        border: 1px solid #d9d9d9;
+        -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3); }
+  .modal_form .sub_form, .modal_services .sub_form {
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 0px; }
+  .modal_form .btn_group, .modal_services .btn_group {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center; }
+
+.modal_services {
+  width: 600px; }
+  .modal_services .title {
+    font-size: 22px;
+    line-height: 28px; }
+  .modal_services p {
+    margin-bottom: 20px; }
